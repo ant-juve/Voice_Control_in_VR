@@ -56,18 +56,18 @@
 %% values in them; it is your responsibility as an author to replace
 %% the commands and values with those provided to you when you
 %% complete the rights form.
-\setcopyright{acmlicensed}
-\copyrightyear{2018}
-\acmYear{2018}
-\acmDOI{XXXXXXX.XXXXXXX}
+% \setcopyright{acmlicensed}
+% \copyrightyear{2018}
+% \acmYear{2018}
+% \acmDOI{XXXXXXX.XXXXXXX}
 
-%%
-%% These commands are for a JOURNAL article.
-\acmJournal{POMACS}
-\acmVolume{37}
-\acmNumber{4}
-\acmArticle{111}
-\acmMonth{8}
+% %%
+% %% These commands are for a JOURNAL article.
+% \acmJournal{POMACS}
+% \acmVolume{37}
+% \acmNumber{4}
+% \acmArticle{111}
+% \acmMonth{8}
 
 %%
 %% Submission ID.
@@ -135,7 +135,7 @@
 %% other information printed in the page headers. This command allows
 %% the author to define a more concise list
 %% of authors' names for this purpose.
-\renewcommand{\shortauthors}{Trovato et al.}
+% \renewcommand{\shortauthors}{Trovato et al.}
 
 %%
 %% The abstract is a short summary of the work to be presented in the
@@ -163,8 +163,7 @@
 \section{Introduction}
 Virtual reality (VR) has become a powerful tool for immersive interaction, yet the prevalent use of handheld controllers
 create barriers for individuals with limited hand mobility.
-Traditional interfaces that track hand control movement, fail to meet the needs of users unable
-to use manual input devices effectively. In order to bridge
+Traditional interfaces that track hand control movement, fail to meet the needs of users unable to use manual input devices effectively. In order to bridge
 this gap, I propose establishing a system that integrates voice
 commands and head-tracking in order to select objects and/or
 move around in virtual environments. My goal is to improve
@@ -179,7 +178,7 @@ Recent research has established various hands-free interfaces in virtual and aug
  \section{Methodology}
  This study is designed as a pilot experiment to explore the feasibility of implementing voice control within a virtual reality environment. Using an Oculus Quest 3 headset coupled with the Vosk voice interface, the system enables hands-free navigation and object selection within a simple living room environment. 
  \subsection{Sample}
- The pool of participants consists of a convenience sample that include my partner, their mother, and my two children. While the sample does not represent a broad unbiased base, it provides initial insights into the usability of the voice-controlled VR interface within different age groups.  
+ The participants consists of a convenience sample that include my partner, their mother, and my two children. Although the sample does not represent a broad unbiased population, it provides initial insights into the usability of the voice-controlled VR interface within different age groups.  
 
 % The primary parameter given to the ``\verb|acmart|'' document class is
 % the {\itshape template style} which corresponds to the kind of publication
@@ -199,15 +198,24 @@ The primary hardware component of this study is the Oculus Quest 3. This system 
 
 
 \subsection{Independent Variable}
-The independent variable is the voice commands enabled by the Vosk voice interface that is integrated into the Unity VR environment. This variable consists of commands like "forward" and "select" that the participants use to navigate and interact within the virtual space.
+The independent variable in this study is the implementation of  voice commands through the Vosk voice interface, which is integrated into the Unity VR environment. This variable consists of commands like "forward" and "select" that the participants use to navigate and interact within the virtual space.
 
 \subsection{Dependent Variables}
 The dependent variables are the performance and user experience outcomes of the system:
 \begin{itemize}
-\item {\texttt{Task Completion Time}}: Measured in seconds, this records how long it takes participants to complete specified tasks. 
+\item {\texttt{Task Completion Time}}: The qualitative measurement in seconds, this records how long it takes participants to complete specified tasks. 
 \item {\texttt{User Feedback}}: Collected via a survey post-task, this qualitative metric includes ratings on ease-of-use, satisfaction, and overall experience with the voice controlled VR system.  
 \end{itemize}
-\section{Typefaces}
+\subsection{Design And Procedure}
+\begin{itemize}
+\item {\texttt{Introduction And Briefing}}: The participants were given a brief overview of the study's purpose. They were instructed on how to wear the Oculus Quest 3 and provided with a short demonstration explaining how head movements coupled with voice commands allow for navigation and interaction.
+\item {\texttt{Experimental Task}}: Participants started at a predefined location within the virtual living room. They were instructed to navigate to a designated area using head movement, to orient direction, while speaking the command "forward". Upon reaching the designated area where two buttons are located, participants were required to use head movement to point to a specified button and speak the command "select". To ensure reliability, each participant completed multiple trials of the navigation and interaction tasks.
+\item {\texttt{Data Analysis}}: Upon completion of each task, the time was recorded manually from the start of navigation task until the button was successfully selected. 
+\item {\texttt{Survey}}: After completion of the trials, participants filled out a brief survey. This qualitative assessment gathered data on their experience, ease of use, and any challenges encountered by the participant.  
+\end{itemize}
+
+
+% \section{Typefaces}
 
 % The ``\verb|acmart|'' document class requires the use of the
 % ``Libertine'' typeface family. Your \TeX\ installation should include
@@ -651,10 +659,10 @@ The dependent variables are the performance and user experience outcomes of the 
 % \end{acks}
 
 % %
-% % The next two lines define the bibliography style to be used, and
-% % the bibliography file.
-% \bibliographystyle{ACM-Reference-Format}
-% \bibliography{Reference}
+% The next two lines define the bibliography style to be used, and
+% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{Reference}
 
 
 %%
