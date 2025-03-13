@@ -44,7 +44,7 @@
 %% for your publication.
 %%
 %%
-\documentclass[acmlarge]{acmart}
+\documentclass[manuscript, screen, review]{acmart}
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
 \AtBeginDocument{%
@@ -109,7 +109,7 @@
 %%
 %% The "title" command has an optional parameter,
 %% allowing the author to define a "short title" to be used in page headers.
-\title{Voice Control in Virtual Reality}
+\title{Inclusive Voice Control Interface in Virtual Reality}
 
 %%
 %% The "author" command and its associated commands are used to define
@@ -161,22 +161,20 @@
 \maketitle
 
 \section{Introduction}
-Virtual reality (VR) has become a powerful tool for immersive interaction, yet the prevalent use of handheld controllers create barriers for individuals with limited hand mobility. Traditional interfaces that depend on manual input are not well suited for users who cannot effectively manipulate these devices, thereby excluding potential users from fully engaging with VR experiences. In order to bridge
-this gap, this work proposes establishing a system that integrates voice
-commands with head-tracking in order to select objects and
-move around in virtual environments.  By facilitating hands-free operation, the system aims not only to improve usability but also to empower users with motor impairments to experience VR in a more natural and inclusive way. Ultimately, this research seeks to contribute to a more accessible design ensuring that immersive technologies are available to all users regardless of their physical capabilities 
+Virtual reality (VR) has become a powerful tool for immersive interaction, yet the prevalent use of handheld controllers create barriers for individuals with limited hand mobility. Traditional interfaces that depend on manual input are not well suited for users who cannot effectively manipulate these devices, thereby excluding potential users from fully engaging with VR experiences. In order to bridge this gap, this work proposes establishing a system that integrates voice commands with head-tracking in order to select objects and move around in virtual environments.  By facilitating hands-free operation, the system aims not only to improve usability but also to empower users with motor impairments to experience VR in a more natural and inclusive way. Ultimately, this research seeks to contribute to a more accessible design ensuring that immersive technologies are available to all users regardless of their physical capabilities 
 
 \section{Related Work}
-Since the inception of VR, natural language interaction has long been at the forefront of proposed interfaces. Though, historically underutilized compared to gaze or gesture controls\cite{a1}. Prior research typically only supported simple spoken commands or short phrases combined with pointing gestures to select objects in VR; but recent research has shown that others have explored purely speech-driven controls for scenarios where the subjects hands are busy, like in a sterile medical setting \cite{a1}. However, the implementation of voice input has often only been included when necessary or needed and has yet to be systematically compared to traditional interactions in terms of performance and preference \cite{a1} for every developed virtual environment.
+Since the inception of VR, natural language interaction has long been at the forefront of proposed interfaces. Though, historically underutilized compared to gaze or gesture controls\cite{a1}. Prior research typically only supported simple spoken commands or short phrases combined with pointing gestures to select objects in VR. Recent research, however, has shown the effectiveness of purely speech-driven controls for scenarios where the subjects hands are busy, like in a sterile medical setting \cite{a2}. Despite these advancements,  voice input has often only been included when necessary, rather than being a standard interaction method or systematically evaluated on performance and user preference across all VR applications \cite{a1}.
 
 \subsection{Usability}
-Evaluations of voice input in VR has the potential to add to the user's experience but comes with challenges \cite{a3}. When voice control navigation, while in a wheelchair within virtual environments, is compared to traditional input modalities, it was revealed that participants travel longer distances but had a high collision rate \cite{a3}. However, combining voice control with autonomous systems enables a higher degree of interaction and control, which positively impact quality of life, efficiency, and safety \cite{a3}. Similarly, participants who were assessed on their perception of voice control across orientation, customization, and analysis tasks, also rated usability high and provided positive feedback on factors such as sickness, comfort, and presence, with an overall accuracy of 85 percent. These outcomes support the conclusion that voice is a feasible input modality for VR environments \cite{a2}.
+Evaluations of voice input in VR suggest this it has the potential to add to the user's experience  \cite{a3} and serve as an effective interaction method. When voice control navigation, while in a wheelchair within virtual environments, is compared to traditional input modalities, it was revealed that participants travel longer distances but also had a higher collision rate \cite{a3}. However, combining voice control with autonomous systems enables a higher degree of interaction and control, which positively impact quality of life, efficiency, and safety \cite{a3}. Similarly, participants who were assessed on their perception of voice control across orientation, customization, and analysis tasks, also rated usability high and provided positive feedback on factors such as sickness, comfort, and presence, with an overall accuracy of 85 percent. These outcomes support the conclusion that voice is a feasible input modality for VR environments \cite{a2}.
 
 \subsection{Accessibility}
-There are many ways of moving in a virtual environment. However, with over one hundred locomotion techniques available, very few research efforts have attempted to understand the accessibility advantage to the population\cite{a4}. A 2024 review of 330 popular VR applications reported a general lack of accessibility features in current VR content \cite{a5}. Many did not even include options like audio cues or haptic feedback to convey information that would help user with limited vision or mobility.  Alternative input methods are still rare in most commercial VR titles\cite{a5}. This trend has not gone unnoticed, though, accessibility experts have begun publishing guidelines geared towards immersion. For instance, the University of South Carolina's Center for Teaching Excellence acknowledges the accessibility challenges that users face and have set guidelines that are designed to explain the accessibility issues with virtual environments and provide practical solutions \cite{b1}. Similarly, industry articles emphasize providing choices like seated play modes, adjustable movement speeds, and customization button mappings to accommodate those with limited motor function \cite{a6}. Flexibility and choice are the cornerstone principles for accessible VR interaction and require broader reviews. By combining insights from these studies, developers and researchers can move closer to VR that is inclusive for all.
+
+Despite the rapid evolustion of VR technology, accessibility remains an afterthought in most virtual environments. With over one hundred locomotion techniques available, few research efforts have explored their benefits for users with mobility impairments\cite{a4}. A 2024 review of 330 popular VR applications reported a general lack of accessibility features in current VR content \cite{a5}. Many did not even include options like audio cues or haptic feedback to convey information that would help user with limited vision or mobility.  Alternative input methods are still rare in most commercial VR titles\cite{a5}. This trend has not gone unnoticed, though, accessibility experts have begun publishing guidelines geared towards immersion. For instance, the University of South Carolina's Center for Teaching Excellence acknowledges the accessibility challenges that users face and have set guidelines that are designed to explain the accessibility issues with virtual environments and provide practical solutions \cite{b1}. Similarly, industry articles emphasize providing choices like seated play modes, adjustable movement speeds, and customization button mappings to accommodate those with limited motor function \cite{a6}. Flexibility and choice are the cornerstone principles for accessible VR interaction and require broader reviews. By combining insights from these studies, developers and researchers can move closer to VR that is inclusive for all.
 
  \section{Methodology}
- This study is designed as a pilot experiment to explore the feasibility of implementing voice control within a virtual reality environment. Using an Oculus Quest 3 headset coupled with the Vosk voice interface, the system enables hands-free navigation and object selection within a simple living room VR environment on Unity. 
+This study is designed as a pilot experiment to explore the feasibility of implementing voice control within a virtual reality environments. Using an Oculus Quest 3 headset coupled with the Vosk voice interface, the system enables hands-free navigation and object selection within a simple living room VR environment on Unity. 
  
  \subsection{Sample}
 The participants consists of a convenience sample that include my partner, their mother, and my two children. Although the sample does not represent a broad unbiased population, it provides initial insights into the usability of the voice-controlled VR interface within different age groups.  
@@ -189,7 +187,7 @@ The participants consists of a convenience sample that include my partner, their
 %   \documentclass[STYLE]{acmart}
 % \end{verbatim}
 \subsection{Apparatus}
-The primary hardware component of this study is the Oculus Quest 3. This system is an all-in-one VR headset developed by Meta, designed to deliver a fully immersive experience. It features a high-resolution display with a per-eye resolution of approximately 2064 x 2208 pixels and a wide field of view. The headset comes equipped with inside-out tracking via integrated cameras, allowing for precise head tracking. Additionally, the Oculus Quest 3 is equipped with a built-in microphone for voice command input. 
+The primary hardware component of this study is the Oculus Quest 3. This system is an all-in-one VR headset developed by Meta. It features a high-resolution display with a per-eye resolution of approximately 2064 x 2208 pixels and a wide field of view. The headset comes equipped with inside-out tracking via integrated cameras, allowing for precise head tracking. Additionally, the Oculus Quest 3 is equipped with a built-in microphone for voice command input. 
 
 % The experimental setup consists of:
 % \begin{itemize}
@@ -199,20 +197,20 @@ The primary hardware component of this study is the Oculus Quest 3. This system 
 
 
 \subsection{Independent Variable}
-The independent variable in this study is the implementation of  voice commands through the Vosk voice interface, which is integrated into the Unity VR environment. This variable consists of commands like "forward" and "select" that the participants use to navigate and interact within the virtual space.
+The independent variable is the implementation of  voice commands through the Vosk voice interface, which is integrated into the Unity VR environment. This  consists of commands like "forward", "back", "stop" and  "select" that the participants use to navigate and interact within the virtual space.
 
 \subsection{Dependent Variables}
-The dependent variables are the performance and user experience outcomes of the system:
+The dependent variables were the performance and user experience outcomes of the system:
 \begin{itemize}
-\item {\texttt{Task Completion Time}}: The qualitative measurement in seconds, this records how long it takes participants to complete specified tasks. 
-\item {\texttt{User Feedback}}: Collected via a survey post-task, this qualitative metric includes ratings on ease-of-use, satisfaction, and overall experience with the voice controlled VR system.  
+\item {\texttt{Task Completion Time}}: The quantitative measurement in seconds, this records how long it takes participants to navigate to destination and how long it takes for them to interact with the virtual button. 
+\item {\texttt{Error Rate}}: A quantitative measurement that tracks the number of missed voice commands
+\item {\texttt{User Feedback}}: A qualitative measurement collected upon completion of the tasks, includes ratings on ease-of-use, satisfaction, and overall experience with the voice controlled VR system.  
 \end{itemize}
 \subsection{Design And Procedure}
 \begin{itemize}
 \item {\texttt{Introduction And Briefing}}: The participants were given a brief overview of the study's purpose. They were instructed on how to wear the Oculus Quest 3 and provided with a short demonstration explaining how head movements coupled with voice commands allow for navigation and interaction.
 \item {\texttt{Experimental Task}}: Participants started at a predefined location within the virtual living room. They were instructed to navigate to a designated area using head movement, to orient direction, while speaking the command "forward". Upon reaching the designated area where two buttons are located, participants were required to use head movement to point to a specified button and speak the command "select". To ensure reliability, each participant completed multiple trials of the navigation and interaction tasks.
-\item {\texttt{Data Analysis}}: Upon completion of each task, the time was recorded manually from the start of navigation task until the button was successfully selected. 
-\item {\texttt{Survey}}: After completion of the trials, participants filled out a brief survey. This qualitative assessment gathered data on their experience, ease of use, and any challenges encountered by the participant.  
+\item {\texttt{Data Analysis}}: The dependent variables were collected manually by the researcher, error amount during each task and time to complete each task. After completion of the trials, user feedback was asked via survey consisting of ease-of-use, satisfaction, and overall experience with the voice controlled VR system.  
 \end{itemize}
 
 
